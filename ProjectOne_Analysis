@@ -15,9 +15,9 @@ The chosen structure would later be implemented in Project Two to display course
 
 | **Data Structure** | **Load & Parse** | **Search Course** | **Print All Courses** | **Memory Usage** | **Advantages** | **Disadvantages** |
 |---------------------|-------------------------|--------------------------|------------------------|------------|
-| **Vector** | O(n) | O(n) | O(n log n) | O(n) | Simple, easy to implement | Slow search for large n |
-| **Hash Table** | O(n)| O(1) avg, O(n) worst  | O(n log n)  | O(n) | Fast search and insert | Worst-case collision slows search |
-| **Binary Search Tree (BST)** | O(n log n)  | O(log n) | O(n)  | O(n) | Sorted automatically, efficient search | Unbalanced BST may degrade to O(n) |
+| **Vector** | O(n) | O(n) | O(n log n) | O(n) | Simple and easy to implement | Linear search slows down with large datasets |
+| **Hash Table** | O(n)| O(1) avg, O(n) worst  | O(n log n)  | O(n) | Very fast search and insert | Worst-case collisions can degrade performance; not sorted |
+| **Binary Search Tree (BST)** | O(n log n)  | O(log n) | O(n)  | O(n) | Automatically maintains sorted order; efficient search | Unbalanced BST may degrade to O(n) |
 
 ---
 
@@ -25,10 +25,11 @@ The chosen structure would later be implemented in Project Two to display course
 After analyzing performance and memory characteristics, the **Binary Search Tree (BST)** was selected for implementation in Project Two.  
 
 Use a Binary Search Tree because it maintains courses in sorted order and provides efficient search. 
-Hash Table is faster for individual lookups but requires additional steps to print courses alphabetically. Vector is simplest but inefficient for large datasets. 
+A Hash Table is faster for individual lookups but requires additional steps to print courses alphabetically. A Vector is simplest but inefficient for large datasets. 
 
 ---
 
 ##  Reflection Summary
-This project reinforced the importance of choosing the right data structure for the task at hand.  
-It demonstrated how a deeper understanding of algorithmic efficiency can improve both runtime performance and program design clarity.
+This project reinforced the importance of choosing the right data structure for a task.
+It highlighted how understanding algorithmic efficiency affects runtime performance, memory usage, and overall program design clarity.
+By analyzing multiple data structures, I gained insight into balancing simplicity, speed, and functionality in software development.
