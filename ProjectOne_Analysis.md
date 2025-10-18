@@ -14,12 +14,11 @@ The chosen structure would later be implemented in Project Two to display course
 ##  Runtime and Memory Analysis
 
 | **Data Structure** | **Load & Parse** | **Search Course** | **Print All Courses** | **Memory Usage** | **Advantages** | **Disadvantages** |
-|---------------------|-------------------------|--------------------------|------------------------|------------|
+|-------------------|-----------------|-----------------|---------------------|-----------------|----------------|-----------------|
 | **Vector** | O(n) | O(n) | O(n log n) | O(n) | Simple and easy to implement | Linear search slows down with large datasets |
-|---------------------|-------------------------|--------------------------|------------------------|------------|
-| **Hash Table** | O(n)| O(1) avg, O(n) worst  | O(n log n)  | O(n) | Very fast search and insert | Worst-case collisions can degrade performance; not sorted |
-|---------------------|-------------------------|--------------------------|------------------------|------------|
-| **Binary Search Tree (BST)** | O(n log n)  | O(log n) | O(n)  | O(n) | Automatically maintains sorted order; efficient search | Unbalanced BST may degrade to O(n) |
+| **Hash Table** | O(n) | O(1) avg, O(n) worst | O(n log n) | O(n) | Very fast search and insert | Worst-case collisions can degrade performance; not sorted |
+| **Binary Search Tree (BST)** | O(n log n) | O(log n) | O(n) | O(n) | Automatically maintains sorted order; efficient search | Unbalanced BST may degrade to O(n) |
+
 
 ---
 
