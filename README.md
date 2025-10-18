@@ -31,49 +31,49 @@ This program simulates a **course advising system** that allows students and adv
 ---
 
 ## Sample Program Execution
-Welcome to the course planner.
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 1
-
-Enter a file name to load: CS 300 ABCU_Advising_Program_Input.csv
-Loaded 8 course(s).
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 2
-
-Here is a sample schedule:
-CSCI100, Introduction to Computer Science
-CSCI101, Introduction to Programming in C++
-CSCI200, Data Structures
-CSCI300, Introduction to Algorithms
-CSCI301, Advanced Programming in C++
-CSCI350, Operating Systems
-CSCI400, Large Software Development
-MATH201, Discrete Mathematics
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 3
-
-What course do you want to know about? csci400
-CSCI400, Large Software Development
-Prerequisites: CSCI301 (Advanced Programming in C++), CSCI350 (Operating Systems)
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 9
-
-Thank you for using the course planner!
+Welcome to the course planner.//
+Load Data Structure.//
+Print Course List.//
+Print Course.//
+Exit//
+What would you like to do? 1//
+//
+Enter a file name to load: CS 300 ABCU_Advising_Program_Input.csv//
+Loaded 8 course(s).//
+//
+Load Data Structure.//
+Print Course List.//
+Print Course.//
+Exit//
+What would you like to do? 2//
+//
+Here is a sample schedule://
+CSCI100, Introduction to Computer Science//
+CSCI101, Introduction to Programming in C++//
+CSCI200, Data Structures//
+CSCI300, Introduction to Algorithms//
+CSCI301, Advanced Programming in C++//
+CSCI350, Operating Systems//
+CSCI400, Large Software Development//
+MATH201, Discrete Mathematics//
+//
+Load Data Structure.//
+Print Course List.//
+Print Course.//
+Exit//
+What would you like to do? 3//
+//
+What course do you want to know about? csci400//
+CSCI400, Large Software Development//
+Prerequisites: CSCI301 (Advanced Programming in C++), CSCI350 (Operating Systems)//
+//
+Load Data Structure.//
+Print Course List.//
+Print Course.//
+Exit//
+What would you like to do? 9//
+//
+Thank you for using the course planner!//
 
 ## Data Structure Design
 The project uses a **Binary Search Tree (BST)** to store courses by their course ID.  
