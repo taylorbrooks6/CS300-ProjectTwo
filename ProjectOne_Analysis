@@ -70,19 +70,19 @@ search right
 
 ##  Runtime and Memory Analysis
 
-| **Data Structure** | **Average Search Time** | **Average Insert Time** | **Memory Efficiency** | **Notes** |
+| **Data Structure** | **Load & Parse** | **Search Course** | **Print All Courses** | **Memory Usage** | **Advantages** | **Disadvantages** |
 |---------------------|-------------------------|--------------------------|------------------------|------------|
-| **Vector** | O(n) | O(1) | Moderate | Must iterate through all elements for searches. |
-| **Hash Table** | O(1) average, O(n) worst | O(1) | High | Collisions can affect performance and require extra handling. |
-| **Binary Search Tree (BST)** | O(log n) average | O(log n) | High | Provides ordered traversal and efficient searching. |
+| **Vector** | O(n) | O(n) | O(n log n) | O(n) | Simple, easy to implement | Slow search for large n |
+| **Hash Table** | O(n)| O(1) avg, O(n) worst  | O(n log n)  | O(n) | Fast search and insert | Worst-case collision slows search |
+| **Binary Search Tree (BST)** | O(n log n)  | O(log n) | O(n)  | O(n) | Sorted automatically, efficient search | Unbalanced BST may degrade to O(n) |
 
 ---
 
 ##  Recommendation
 After analyzing performance and memory characteristics, the **Binary Search Tree (BST)** was selected for implementation in Project Two.  
 
-While the hash table offers slightly faster average lookups, the BST’s advantage lies in its **ability to maintain sorted data** and efficiently support **in-order traversal**—ideal for printing the course list in alphanumeric order.  
-It also provides predictable performance for both insertion and search, making it the most balanced and readable structure for this problem.
+Use a Binary Search Tree because it maintains courses in sorted order and provides efficient search. 
+Hash Table is faster for individual lookups but requires additional steps to print courses alphabetically. Vector is simplest but inefficient for large datasets. 
 
 ---
 
