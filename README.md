@@ -1,110 +1,47 @@
-# Project Two – ABCU Course Planner
+# Project One and Two – ABCU Pseudocode and Course Planner Code
 
 **Author:** Taylor Brooks  
 **Course:** CS 300 – Analysis and Design  
 **Institution:** SNHU (Applied Bachelor’s in Computer Science)  
-**Project:** Project Two – Course Planner  
+**Project:** Project One and Two – Course Planner  
 
 ---
 
 ## Overview
-This program simulates a **course advising system** that allows students and advisors to view courses, their descriptions, and any required prerequisites. It reads data from a `.csv` file, stores the information using an efficient data structure, and provides an interactive console menu for easy navigation.
+
+This repository contains submissions for **Project One** (analysis of data structures) and **Project Two** (C++ implementation of a course planner using a Binary Search Tree). The projects demonstrate understanding of **data structures, algorithms, and program design** while providing practical functionality for sorting and displaying courses with prerequisites.
 
 ---
 
-## Features
-- Loads course data from a `.csv` file  
-- Stores courses in a **Binary Search Tree (BST)** for fast, ordered retrieval  
-- Prints a complete course list in **alphanumeric order**  
-- Displays **individual course details** with prerequisites  
-- Handles invalid input and missing data gracefully  
+## Reflection
+
+### 1. What was the problem you were solving in the projects for this course?
+
+The goal was to create a program that efficiently stores, retrieves, and displays course information for an academic advising program. Project One involved analyzing **different data structures** to determine the most effective for this task. Project Two implemented the chosen structure to **display courses in alphanumeric order** and allow users to look up prerequisites.
 
 ---
 
-## File Information
-| File Name | Description |
-|------------|-------------|
-| `ProjectTwo.cpp` | Main source file containing the full implementation of the course planner |
-| `CS 300 ABCU_Advising_Program_Input.csv` | Sample input file containing course information and prerequisites |
-| `README.md` | This file – provides documentation and project overview |
+### 2. How did you approach the problem? Consider why data structures are important to understand.
+
+I analyzed **vector, hash table, and binary search tree (BST)** implementations in terms of runtime, memory usage, and ease of use. Understanding the strengths and limitations of these structures helped me select the **BST** for Project Two because it naturally maintains sorted order and provides efficient search functionality.
 
 ---
 
-## Sample Program Execution
-Welcome to the course planner.
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 1
+### 3. How did you overcome any roadblocks you encountered while going through the activities or project?
 
-Enter a file name to load: CS 300 ABCU_Advising_Program_Input.csv
-Loaded 8 course(s).
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 2
-
-Here is a sample schedule:
-CSCI100, Introduction to Computer Science
-CSCI101, Introduction to Programming in C++
-CSCI200, Data Structures
-CSCI300, Introduction to Algorithms
-CSCI301, Advanced Programming in C++
-CSCI350, Operating Systems
-CSCI400, Large Software Development
-MATH201, Discrete Mathematics
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 3
-
-What course do you want to know about? csci400
-CSCI400, Large Software Development
-Prerequisites: CSCI301 (Advanced Programming in C++), CSCI350 (Operating Systems)
-
-Load Data Structure.
-Print Course List.
-Print Course.
-Exit
-What would you like to do? 9
-
-Thank you for using the course planner!
-
-## Data Structure Design
-The project uses a **Binary Search Tree (BST)** to store courses by their course ID.  
-- Each node represents a single course.  
-- In-order traversal ensures alphabetical output.  
-- Lookup operations for individual courses are O(log n) on average.
+Challenges included validating prerequisites and ensuring memory was managed correctly for the BST. I overcame these by carefully designing utility functions for trimming, splitting, and validating input, and by systematically testing insertion and search functionality.
 
 ---
 
-## How to Run
-1. Compile the program (e.g., in Visual Studio or g++):
-g++ ProjectTwo.cpp -o ProjectTwo
+### 4. How has your work on this project expanded your approach to designing software and developing programs?
 
-2. Run the executable
-
-3. When prompted, enter the CSV file name (example:  
-`CS 300 ABCU_Advising_Program_Input.csv`)
+These projects reinforced the importance of **choosing the right data structure** for the task at hand. I now better appreciate how **algorithmic efficiency** and program design are interconnected, which informs my approach to future software development.
 
 ---
 
-## Notes
-- Input file must follow the format:  
-COURSE_ID,Course Name,Prerequisite1,Prerequisite2
+### 5. How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
 
-- The program validates missing files and invalid course codes.
-
----
-
-## Acknowledgements
-This project was developed for **Project Two** in the **CS 300** course.  
-It demonstrates mastery of **data structures**, **file handling**, and **algorithmic efficiency** in C++.
+I learned to prioritize **clarity and modularity** in my code, creating functions that are easy to read and reuse. Using a BST with clear insertion and traversal functions makes the program **maintainable and adaptable** for future changes, such as adding new courses or additional features.
 
 ---
 
