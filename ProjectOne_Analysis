@@ -1,0 +1,91 @@
+#  Project One – Data Structures Analysis  
+**Author:** Taylor Brooks  
+**Course:** CS 300 – Data Structures and Algorithms  
+**Date:** October 2025  
+
+---
+
+##  Overview
+The goal of this project was to compare multiple data structures—**vector**, **hash table**, and **binary search tree (BST)**—to determine which would be the most efficient and practical for storing and retrieving course information in the university advising program.  
+The chosen structure would later be implemented in Project Two to display courses in alphanumeric order and support prerequisite lookups.
+
+---
+
+##  Pseudocode Overview
+
+### **Vector**
+loadCourses(filename)
+open file
+for each line in file
+parse course data
+add course to vector
+
+**Search Function**
+findCourse(courseNumber)
+for each course in vector
+if courseNumber matches
+return course
+return not found
+
+
+---
+
+### **Hash Table**
+insertCourse(course)
+compute hash from courseNumber
+find appropriate bucket
+place course in bucket
+
+**Search Function**
+findCourse(courseNumber)
+compute hash from courseNumber
+look in bucket for match
+return course or not found
+
+---
+
+### **Binary Search Tree (BST)**
+insert(node, course)
+if node is null
+create new node with course
+else if courseNumber < node.courseNumber
+insert left
+else
+insert right
+
+
+**Search Function**
+find(node, courseNumber)
+if node is null
+return not found
+else if courseNumber == node.courseNumber
+return course
+else if courseNumber < node.courseNumber
+search left
+else
+search right
+
+
+---
+
+##  Runtime and Memory Analysis
+
+| **Data Structure** | **Average Search Time** | **Average Insert Time** | **Memory Efficiency** | **Notes** |
+|---------------------|-------------------------|--------------------------|------------------------|------------|
+| **Vector** | O(n) | O(1) | Moderate | Must iterate through all elements for searches. |
+| **Hash Table** | O(1) average, O(n) worst | O(1) | High | Collisions can affect performance and require extra handling. |
+| **Binary Search Tree (BST)** | O(log n) average | O(log n) | High | Provides ordered traversal and efficient searching. |
+
+---
+
+##  Recommendation
+After analyzing performance and memory characteristics, the **Binary Search Tree (BST)** was selected for implementation in Project Two.  
+
+While the hash table offers slightly faster average lookups, the BST’s advantage lies in its **ability to maintain sorted data** and efficiently support **in-order traversal**—ideal for printing the course list in alphanumeric order.  
+It also provides predictable performance for both insertion and search, making it the most balanced and readable structure for this problem.
+
+---
+
+##  Reflection Summary
+This project reinforced the importance of choosing the right data structure for the task at hand.  
+It demonstrated how a deeper understanding of algorithmic efficiency can improve both runtime performance and program design clarity.
